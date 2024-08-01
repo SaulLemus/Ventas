@@ -1,0 +1,23 @@
+
+
+(listo) 1. que se pueda reimprimir la factura
+(Listo) 2. que el pedido no se pueda importar mas de 1 vez
+        ** agregar campo facturado smallint
+                         orden_doc_destino int
+3. Ver porque en ventas por vendedor sale 2 veces el 717
+**4. que solo el admin va a poder ver el log (consulta nueva)
+(Listo) 5. que un pedido cerrado se pueda anular
+6. Que el usuario de despacho pueda ver pedidos cerrados al momento
+   de despacho solo que lo muestre e imprimir
+
+7.(Listo) que en consulta de vendedores que se pueda separar facturas tipo 
+   A y tipo B y general
+
+
+8. Ir planificando las opciones para pago de facturas cuenta corriente
+
+
+
+Nota evaluar como hacer para la anulacion de pedidos y facturas
+ que no todo usuario pueda hacerlo
+

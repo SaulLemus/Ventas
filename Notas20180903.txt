@@ -1,0 +1,21 @@
+
+
+-En la consulta del KARDEX que se muestre la fecha de anulacion de pedidos 
+ para evitar la confusion de la secuencia especialmente de pedidos anulados
+
+-que el los informes de ventas aparezca el numero de pedido
+
+
+
+objetos
+
+cliente 1
+proveedor deberia ser 2
+articulo deberia ser 3
+pedido: 31
+factura cli:32
+ing prv:41
+Traslado de merc entre almacenesdeberia ser: 50
+Ingreso de mercaderia:51
+Salida manual:52
+

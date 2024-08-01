@@ -1,0 +1,7 @@
+
+
+Revvisar los botones de imprimir que no hacen nada
+
+Que se pueda anular la factura para que no salga en ventas
+
+

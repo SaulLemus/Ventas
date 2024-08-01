@@ -1,0 +1,33 @@
+
+
+
+Pendiente
+--Fecha de entrega en pedido
+--Que cuando facture no deje grabar de nuevo
+
+
+
+En proceso
+registrar quien realiza cada operacion
+
+
+
+Finalizado
+
+-en el despacho que muestre los pendidentes con opcion a ver los
+que no se pueda anular si ya se despacho o anulo
+
+-validar que al facturar si no esta facturado 
+
+-que no se pueda anular un pedido 2 veces
+
+-- impresion de pedido que se haga mas angosto para archivar
+
+88216969  wifi
+
+
+
+
+
+
+Si el pedido no se despacha en 5 dias se cierra y regresa la existencia

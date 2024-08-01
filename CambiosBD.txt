@@ -1,0 +1,58 @@
+
+
+12/nov/2018 de agrego a pedido la fecha de anulacion (se muestra solo en Kardex)
+
+09/ene/2019
+     
+Terminado
+     -En el reporte de ventas que aparezca el numero de factura localizable (tambien se agrego orden a busqueda de factura)
+     * se incluyo el numero de orden
+
+
+En proceso
+  - Correlativo de pedido por vendedor
+    ** se creo el indice Idxvnd_codigo en tbl_vendedor para impedir duplicados en vendedores
+    ** se creo el indice IdxCor_SerieyNum sobre tipodocumento y serie
+
+
+
+Pendientes
+    * Consultar
+     -Que se actualice el precio de ultima compra en el articulo
+      -
+      (llevar un correlativo para las facturas por tipo para que sean localizables fisicamente,
+       o evaluar poner el correlativo correcto de facturas fisicas,
+       el caso creo que es que no pueden relacionar el numero fisico con el grabado)
+
+     -Reporte de compras por articulo, resumen y detalle
+
+
+
+
+
+Temas a tratar
+     -Forzar que al grabar un articulo nuevo tenga 6 digitos No mas No menos (esperar codigos nuevos)
+     -Pedidos Anulados
+     -Que bodega pueda ver reporte de pedidos anulados sin precios
+     -Reporte de compras por articulo (sirve para cuadrar las compras por articulo)
+     
+     -Incluir en el formato de factura el numero de orden para identificacion unica
+     -Ver el tema de correlativos de pedidos (que sea por vendedor)
+     -Ingresos de compras que no deje grabar sin detalle (lineas)
+
+Terminados
+
+
+
+Revisar ingresos 
+
+937
+936
+937
+940
+942
+943
+
+
+
+

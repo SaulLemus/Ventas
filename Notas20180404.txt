@@ -1,0 +1,28 @@
+
+Revisar con chun
+
+Pedido 229 solo tiene pajillas y  al llevarlo a despacho muetra otra cosa  (listo rows.clear)
+
+AL factura todo dice oficina (Resuelto hay que crear vendedores)
+
+Perfil de ventas que puedan ver existencia y recepcion (Probar )
+
+Bloquear que no haga pedido sin existencia (Listo)
+ si la 4 es mayor a la 2 no s puede vender
+
+
+Impresora de despachos en recepcion no la cambio (Listo tenia otra impresora)
+
+PErfil de produccion mejor hacer un modulo de pedidos
+
+REvisar  ingreso duplicado 163 ver correlativo que paso
+(Tambien revisar el numero de documento 42 que tiene duplicado)
+
+
+Cuando el facturador poner fctura tipo A o Tipo B 
+
+Y en las consultasa de ventas poder ver A o B
+
+Consultas de ventas con 2 decimales
+
+

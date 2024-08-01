@@ -1,0 +1,26 @@
+
+
+
+use ventas
+
+select * from tbllog_operacion
+
+select * from tbl_prv_ingreso 
+
+select numero_documento,COUNT(numero_documento)  from tbl_prv_ingreso group by numero_documento having COUNT(numero_documento)>1
+
+
+select * from tbl_prv_ingreso where numero_documento = 219  --orden 210
+
+select * from tbl_prv_ingreso_det where orden_doc=210
+
+--delete tbl_prv_ingreso where orden =210
+--delete tbl_prv_ingreso_det where orden_doc =210
+
+
+select * from tbl_prv_ingreso where numero_documento = 322  --orden 312
+
+select * from tbl_prv_ingreso_det where orden_doc=312
+
+--delete tbl_prv_ingreso where orden =312
+--delete tbl_prv_ingreso_det where orden_doc =312

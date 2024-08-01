@@ -1,0 +1,31 @@
+
+
+- que se pueda seleccionar el rango de 
+  -vendedores
+  -clientes
+  -articulos
+  -Log de compras
+
+
+***************************************************
+
+-consulta reporte de ventas general
+-reporte de kardex general y por articulo
+-reporte de compras
+-Log de ingresos
+-Log de facturacion
+
+
+---IMPORTANTE CICLO DE PRUEBAS COMPLETO
+-revisar manejo de correlativo en pedidos
+-grabar el usuario del sistema no el vendedor
+-hacer un reporte de ventas por correlativo de factura
+
+
+-consulta reporte de ingresos
+
+-porner rangos a las consultas/reporte
+-que al facturar un pedido no se pueda importar de nuevo
+
+
+

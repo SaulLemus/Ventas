@@ -1,0 +1,20 @@
+
+
+
+**-que no se pueda facturar un anulado
+**-Obligar que pongan un vendedor valido en el pedido
+-que se pueda modificar un pedido siempre que no haya sido facturado (No se debe hacer ya que este decarga inventario)
+-Impresion de la compra en el regitro de la compra (ingreso de mercaderia)
+-Evaluar que se pueda mover el margen antes de imprimir en factura
+- que una factura anulada no se pueda anular de nuevo
+
+-Evaluar cambios para llevar el control de facturas pagadas (tomar en cuenta que se pueden anular pagos) (Pago mixto)
+ numero de boleta y todos los datos relacionados
+-tomar facturas pendientes de pago por fecha.
+
+
+
+
+...
+pedido anulado  # 1363
+
