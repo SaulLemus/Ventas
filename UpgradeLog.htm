@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+ <html xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><meta content="en-us" http-equiv="Content-Language" /><meta content="text/html; charset=utf-16" http-equiv="Content-Type" /><title _locID="ConversionReport0">
+          Migration Report
+        </title><style> 
+                    /* Body style, for the entire document */
+                    body
+                    {
+                        background: #F3F3F4;
+                        color: #1E1E1F;
+                        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    /* Header1 style, used for the main title */
+                    h1
+                    {
+                        padding: 10px 0px 10px 10px;
+                        font-size: 21pt;
+                        background-color: #E2E2E2;
+                        border-bottom: 1px #C1C1C2 solid; 
+                        color: #201F20;
+                        margin: 0;
+                        font-weight: normal;
+                    }
+
+                    /* Header2 style, used for "Overview" and other sections */
+                    h2
+                    {
+                        font-size: 18pt;
+                        font-weight: normal;
+                        padding: 15px 0 5px 0;
+                        margin: 0;
+                    }
+
+                    /* Header3 style, used for sub-sections, such as project name */
+                    h3
+                    {
+                        font-weight: normal;
+                        font-size: 15pt;
+                        margin: 0;
+                        padding: 15px 0 5px 0;
+                        background-color: transparent;
+                    }
+
+                    /* Color all hyperlinks one color */
+                    a
+                    {
+                        color: #1382CE;
+                    }
+
+                    /* Table styles */ 
+                    table
+                    {
+                        border-spacing: 0 0;
+                        border-collapse: collapse;
+                        font-size: 10pt;
+                    }
+
+                    table th
+                    {
+                        background: #E7E7E8;
+                        text-align: left;
+                        text-decoration: none;
+                        font-weight: normal;
+                        padding: 3px 6px 3px 6px;
+                    }
+
+                    table td
+                    {
+                        vertical-align: top;
+                        padding: 3px 6px 5px 5px;
+                        margin: 0px;
+                        border: 1px solid #E7E7E8;
+                        background: #F7F7F8;
+                    }
+
+                    /* Local link is a style for hyperlinks that link to file:/// content, there are lots so color them as 'normal' text until the user mouse overs */
+                    .localLink
+                    {
+                        color: #1E1E1F;
+                        background: #EEEEED;
+                        text-decoration: none;
+                    }
+
+                    .localLink:hover
+                    {
+                        color: #1382CE;
+                        background: #FFFF99;
+                        text-decoration: none;
+                    }
+
+                    /* Center text, used in the over views cells that contain message level counts */ 
+                    .textCentered
+                    {
+                        text-align: center;
+                    }
+
+                    /* The message cells in message tables should take up all avaliable space */
+                    .messageCell
+                    {
+                        width: 100%;
+                    }
+
+                    /* Padding around the content after the h1 */ 
+                    #content 
+                    {
+	                    padding: 0px 12px 12px 12px; 
+                    }
+
+                    /* The overview table expands to width, with a max width of 97% */ 
+                    #overview table
+                    {
+                        width: auto;
+                        max-width: 75%; 
+                    }
+
+                    /* The messages tables are always 97% width */
+                    #messages table
+                    {
+                        width: 97%;
+                    }
+
+                    /* All Icons */
+                    .IconSuccessEncoded, .IconInfoEncoded, .IconWarningEncoded, .IconErrorEncoded
+                    {
+                        min-width:18px;
+                        min-height:18px; 
+                        background-repeat:no-repeat;
+                        background-position:center;
+                    }
+
+                    /* Success icon encoded */
+                    .IconSuccessEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconSuccess#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcElEQVR4Xq2TsUsCURzHv15g8ZJcBWlyiYYgCIWcb9DFRRwMW5TA2c0/QEFwFkxxUQdxVlBwCYWOi6IhWgQhBLHJUCkhLr/BW8S7gvrAg+N+v8/v+x68Z8MGy+XSCyABQAXgBgHGALoASkIIDWSLeLBetdHryMjd5IxQPWT4rn1c/P7+xxp72Cs9m5SZ0Bq2vPnbPFafK2zDvmNHypdC0BPkLlQhxJsCAhQoZwdZU5mwxh720qGo8MzTxTTKZDPCx2HoVzp6lz0Q9tKhyx0kGs8Ny+TkWRKk8lCROwEduhyg9l/6lunOPSfmH3NUH6uQ0KHLAe7JYvJjevm+DAMGJHToKtigE+vwvIidxLamb8IBY9e+C5LiXREkfho3TSd06HJA13/oh6T51MTsfQbHrsMynQ5dDihFjiK8JJAU9AKIWTp76dCVN7HWHrajmUEGvyF9nkbAE6gLIS7kTUyuf2gscLoJrElZo/Mvj+nPz/kLTmfnEwP3tB0AAAAASUVORK5CYII=);
+                    }
+
+                    /* Information icon encoded */
+                    .IconInfoEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconInformation#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR4Xs2TsUoDQRRF7wwoziokjZUKadInhdhukR9YP8DMX1hYW+QvdsXa/QHBbcXC7W0CamWTQnclFutceIQJwwaWNLlwm5k5d94M76mmaeCrrmsLYOocY12FcxZFUeozCqKqqgYA8uevv1H6VuPxcwlfk5N92KHBxfFeCSAxxswlYAW/Xr989x/mv9gkhtyMDhcAxgzRsp7flj8B/HF1RsMXq+NZMkopaHe7lbKxQUEIGbKsYNoGn969060hZBkQex/W8oRQwsQaW2o3Ago2SVcJUzAgY3N0lTCZZm+zPS8HB51gMmS1DEYyOz9acKO1D8JWTlafKIMxdhvlfdyT94Vv5h7P8Ky7nQzACmhvKq3zk3PjW9asz9D/1oigecsioooAAAAASUVORK5CYII=);
+                    }
+
+                    /* Warning icon encoded */
+                    .IconWarningEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconWarning#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4XpWSMQ7CMAxFf4xAyBMLCxMrO8dhaBcuwdCJS3RJBw7SA/QGTCxdWJgiQYWKXJWKIXHIlyw5lqr34tQgEOdcBsCOx5yZK3hCCKdYXneQkh4pEfqzLfu+wVDSyyzFoJjfz9NB+pAF+eizx2Vruts0k15mPgvS6GYvpVtQhB61IB/dk6AF6fS4Ben0uIX5odtFe8Q/eW1KvFeH4e8khT6+gm5B+t3juyDt7n0jpe+CANTd+oTUjN/U3yVaABnSUjFz/gFq44JaVSCXeQAAAABJRU5ErkJggg==);
+                    }
+
+                    /* Error icon encoded */
+                    .IconErrorEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconError#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4XqWTvUoEQRCE6wYPZUA80AfwAQz23uCMjA7MDRQEIzPBVEyNTQUFIw00vcQTTMzuAh/AxEQQT8HF/3G/oGGnEUGuoNnd6qoZuqltyKEsyzVJq5I6rnUp6SjGeGhESikzzlc1eL7opfuVbrqbU1Zw9NCgtQMaZpY0eNnaaL2fHusvTK5vKu7sjSS1Y4y3QUA6K3e3Mau5UFDyMP7tYF9o8cAHZv68vipoIJg971PZIZ5HiwdvYGGvFVFHmGmZ2MxwmQYPXubPl9Up0tfoMQGetXd6mRbvhBw+boZ6WF7Mbv1+GsHRk0fQmPAH1GfmZirbCfDJ61tw3Px8/8pZsPAG4jlVhcPgZ7adwNWBB68lkRQWFiTgFlbnLY3DGGM7izIJIyT/jjIvEJw6fdJTc6krDzh6aMwMP9bvDH4ADSsa9uSWVJkAAAAASUVORK5CYII=);
+                    }
+                 </style><script type="text/javascript" language="javascript"> 
+          
+            // Startup 
+            // Hook up the the loaded event for the document/window, to linkify the document content
+            var startupFunction = function() { linkifyElement("messages"); };
+            
+            if(window.attachEvent)
+            {
+              window.attachEvent('onload', startupFunction);
+            }
+            else if (window.addEventListener) 
+            {
+              window.addEventListener('load', startupFunction, false);
+            }
+            else 
+            {
+              document.addEventListener('load', startupFunction, false);
+            } 
+            
+            // Toggles the visibility of table rows with the specified name 
+            function toggleTableRowsByName(name)
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  if(!!currentName && currentName.indexOf(name) == 0)
+                  {
+                      var isVisible = allRows[i].style.display == ''; 
+                      isVisible ? allRows[i].style.display = 'none' : allRows[i].style.display = '';
+                  }
+               }
+            }
+            
+            function scrollToFirstVisibleRow(name) 
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  var isVisible = allRows[i].style.display == ''; 
+                  if(!!currentName && currentName.indexOf(name) == 0 && isVisible)
+                  {
+                     allRows[i].scrollIntoView(true); 
+                     return true; 
+                  }
+               }
+               
+               return false;
+            }
+            
+            // Linkifies the specified text content, replaces candidate links with html links 
+            function linkify(text)
+            {
+                 if(!text || 0 === text.length)
+                 {
+                     return text; 
+                 }
+
+                 // Find http, https and ftp links and replace them with hyper links 
+                 var urlLink = /(http|https|ftp)\:\/\/[a-zA-Z0-9\-\.]+(:[a-zA-Z0-9]*)?\/?([a-zA-Z0-9\-\._\?\,\/\\\+&%\$#\=~;\{\}])*/gi;
+                 
+                 return text.replace(urlLink, '<a href="$&">$&</a>') ;
+            }
+            
+            // Linkifies the specified element by ID
+            function linkifyElement(id)
+            {
+                var element = document.getElementById(id);
+                if(!!element)
+                {
+                  element.innerHTML = linkify(element.innerHTML); 
+                }
+            }
+            
+            function ToggleMessageVisibility(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              toggleTableRowsByName("MessageRowClass" + projectName);
+              toggleTableRowsByName('MessageRowHeaderShow' + projectName);
+              toggleTableRowsByName('MessageRowHeaderHide' + projectName); 
+            }
+            
+            function ScrollToFirstVisibleMessage(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              // First try the 'Show messages' row
+              if(!scrollToFirstVisibleRow('MessageRowHeaderShow' + projectName))
+              {
+                // Failed to find a visible row for 'Show messages', try an actual message row 
+                scrollToFirstVisibleRow('MessageRowClass' + projectName); 
+              }
+            }
+           </script></head><body><h1 _locID="ConversionReport">
+          Migration Report - Ventas</h1><div id="content"><h2 _locID="OverviewTitle">Overview</h2><div id="overview"><table><tr><th></th><th _locID="ProjectTableHeader">Project</th><th _locID="PathTableHeader">Path</th><th _locID="ErrorsTableHeader">Errors</th><th _locID="WarningsTableHeader">Warnings</th><th _locID="MessagesTableHeader">Messages</th></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#Solution"><span _locID="OverviewSolutionSpan">Solution</span></a></strong></td><td>Ventas.sln</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#SolutionWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('Solution'); return false;">2</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Ventas">Ventas</a></strong></td><td>Ventas\Ventas.vbproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('Ventas'); return false;">229</a></td></tr></table></div><h2 _locID="SolutionAndProjectsTitle">Solution and projects</h2><div id="messages"><a name="Solution" /><h3 _locID="ProjectDisplayNameHeader">Solution</h3><table><tr id="SolutionHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassSolution"><td class="IconWarningEncoded"><a name="SolutionWarning" /></td><td class="messageCell"><strong>Ventas.sln:
+        </strong><span>Visual Studio needs to make non-functional changes to this project in order to enable the project to open in released versions of Visual Studio newer than Visual Studio 2010 SP1 without impacting project behavior.</span></td></tr><tr name="MessageRowHeaderShowSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>Ventas.sln:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas.sln</span></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>Ventas.sln:
+        </strong><span>Solution migrated successfully</span></td></tr><tr style="display: none" name="MessageRowHeaderHideSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table><a name="Ventas" /><h3>Ventas</h3><table><tr id="VentasHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="MessageRowHeaderShowVentas"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="VentasMessage" onclick="ToggleMessageVisibility('Ventas'); return false;">
+          Show 229 additional messages
+        </a></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Ventas.vbproj:
+        </strong><span>Project file successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Ventas.vbproj</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Ventas.vbproj.user:
+        </strong><span>Project user file successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Ventas.vbproj.user</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Administracion\frm_login.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Administracion\frm_login.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Administracion\frm_login.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Administracion\frm_login.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Administracion\frm_usuario.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Administracion\frm_usuario.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Administracion\frm_usuario.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Administracion\frm_usuario.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Bodega\frm_bod_pedido.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Bodega\frm_bod_pedido.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Bodega\frm_bod_pedido.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Bodega\frm_bod_pedido.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_pedidocli.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_pedidocli.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_pedidocli.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_pedidocli.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_cotizacion.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_cotizacion.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_cotizacion.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_cotizacion.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_devcli.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_devcli.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_devcli.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_devcli.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_facprv.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_facprv.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_facprv.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_facprv.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_factura.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_factura.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_factura.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_factura.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_ingprv.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_ingprv.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_ingprv.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_ingprv.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_pedprv.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_pedprv.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_pedprv.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_pedprv.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_usuario.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_usuario.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_usuario.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_usuario.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\cotizacion.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\cotizacion.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\devolucion.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\devolucion.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\documento.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\documento.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_almacen.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_almacen.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_almacen.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_almacen.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_articulo.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_articulo.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_articulo.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_articulo.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_cliente.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_cliente.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_cliente.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_cliente.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_lista.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_lista.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_lista.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_lista.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_proveedor.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_proveedor.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_proveedor.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_proveedor.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_vendedor.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_vendedor.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_vendedor.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_vendedor.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\almacen.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\almacen.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\articulo.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\articulo.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\Cliente.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\Cliente.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\factura.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\factura.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\facturaprv.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\facturaprv.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\ingresoprov.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\ingresoprov.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\Lista.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\Lista.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\log.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\log.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\pedido.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\pedido.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\pedidoprov.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\pedidoprov.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\proveedor.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\proveedor.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\salida.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\salida.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\traslado.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\traslado.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\usuario.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\usuario.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Clases\vendedor.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Clases\vendedor.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_ConsultaOP.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_ConsultaOP.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_ConsultaOP.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_ConsultaOP.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_compras_prv.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_compras_prv.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_compras_prv.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_compras_prv.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_kardex.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_kardex.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_kardex.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_kardex.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_pedidos_cli.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_pedidos_cli.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_pedidos_cli.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_pedidos_cli.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_art.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_art.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_art.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_art.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_cli.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_cli.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_cli.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_cli.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_gen.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_gen.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_gen.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_gen.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_vnd.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_vnd.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_vnd.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_vnd.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_con_ingman.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_con_ingman.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_con_ingman.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_con_ingman.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_con_salman.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_con_salman.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_con_salman.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_con_salman.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Kardex.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Kardex.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Kardex.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Kardex.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RcPrv.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RcPrv.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RcPrv.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RcPrv.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RvArt.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RvArt.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RvArt.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RvArt.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RvCli.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RvCli.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RvCli.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RvCli.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RvCli_det.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RvCli_det.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RvCli_det.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RvCli_det.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Rvgen.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Rvgen.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Rvgen.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Rvgen.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Rvvnd.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Rvvnd.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Rvvnd.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Rvvnd.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Rvvnd_det.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Rvvnd_det.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Rvvnd_det.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Rvvnd_det.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_com_prv.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_com_prv.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_Kardex.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_Kardex.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_art.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_art.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_cli.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_cli.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_cliDet.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_cliDet.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_gen.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_gen.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_vnd.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_vnd.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_vndDet.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_vndDet.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_cotcli.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_cotcli.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_cotcli.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_cotcli.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_devcli.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_devcli.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_devcli.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_devcli.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_documento.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_documento.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_documento.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_documento.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_facprv.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_facprv.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_facprv.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_facprv.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_factura.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_factura.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_factura.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_factura.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_ingprv.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_ingprv.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_ingprv.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_ingprv.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_ingresoalm.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_ingresoalm.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_ingresoalm.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_ingresoalm.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_pedido.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_pedido.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_pedido.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_pedido.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_pedidoprv.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_pedidoprv.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_pedidoprv.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_pedidoprv.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_salidaalm.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_salidaalm.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_salidaalm.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_salidaalm.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_traslado.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_traslado.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_traslado.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_traslado.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Entorno.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Entorno.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_almacen.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_almacen.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_almacen.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_almacen.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_articulo.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_articulo.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_articulo.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_articulo.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_cliente.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_cliente.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_cliente.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_cliente.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_listaprecio.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_listaprecio.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_listaprecio.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_listaprecio.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_proveedor.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_proveedor.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_proveedor.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_proveedor.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_vendedor.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_vendedor.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_vendedor.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_vendedor.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_envio.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_envio.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_envio.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_envio.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_factura.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_factura.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_factura.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_factura.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_ingCompra.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_ingCompra.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_ingCompra.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_ingCompra.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_pedido.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_pedido.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_pedido.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_pedido.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\RPT_envio.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\RPT_envio.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\RPT_Factura.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\RPT_Factura.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\RPT_IngCompra.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\RPT_IngCompra.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\RPT_PedidoCli.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\RPT_PedidoCli.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Inventario\frm_cons_existencia.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Inventario\frm_cons_existencia.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Inventario\frm_cons_existencia.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Inventario\frm_cons_existencia.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\recursos.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\recursos.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Ventas.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Ventas.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Ventas.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Ventas.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\My Project\AssemblyInfo.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\My Project\AssemblyInfo.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\My Project\Application.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\My Project\Application.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\My Project\Resources.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\My Project\Resources.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\My Project\Settings.Designer.vb:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\My Project\Settings.Designer.vb</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\My Project\Application.myapp:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\My Project\Application.myapp</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\My Project\Settings.settings:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\My Project\Settings.settings</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Administracion\frm_login.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Administracion\frm_login.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Administracion\frm_usuario.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Administracion\frm_usuario.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Bodega\frm_bod_pedido.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Bodega\frm_bod_pedido.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_pedidocli.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_pedidocli.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_almacen.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_almacen.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_articulo.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_articulo.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_cliente.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_cliente.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_cotizacion.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_cotizacion.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_devcli.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_devcli.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_facprv.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_facprv.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_factura.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_factura.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_ingprv.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_ingprv.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_lista.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_lista.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_pedprv.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_pedprv.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_proveedor.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_proveedor.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_usuario.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_usuario.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Busquedas\frm_bus_vendedor.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Busquedas\frm_bus_vendedor.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_ConsultaOP.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_ConsultaOP.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_compras_prv.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_compras_prv.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_kardex.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_kardex.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_pedidos_cli.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_pedidos_cli.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_art.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_art.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_cli.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_cli.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_gen.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_gen.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_cons_ventas_vnd.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_cons_ventas_vnd.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_con_ingman.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_con_ingman.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_con_salman.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_con_salman.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Kardex.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Kardex.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RcPrv.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RcPrv.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RvArt.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RvArt.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RvCli.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RvCli.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_RvCli_det.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_RvCli_det.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Rvgen.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Rvgen.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Rvvnd.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Rvvnd.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\frm_Rvvnd_det.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\frm_Rvvnd_det.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_com_prv.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_com_prv.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_Kardex.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_Kardex.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_art.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_art.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_cli.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_cli.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_cliDet.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_cliDet.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_gen.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_gen.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_vnd.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_vnd.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Consultas\RPT_con_ven_vndDet.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Consultas\RPT_con_ven_vndDet.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_cotcli.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_cotcli.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_devcli.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_devcli.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_documento.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_documento.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_facprv.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_facprv.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_factura.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_factura.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_ingprv.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_ingprv.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_ingresoalm.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_ingresoalm.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_pedido.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_pedido.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_pedidoprv.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_pedidoprv.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_salidaalm.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_salidaalm.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Documentos\frm_traslado.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Documentos\frm_traslado.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_almacen.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_almacen.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_articulo.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_articulo.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_cliente.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_cliente.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_listaprecio.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_listaprecio.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_proveedor.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_proveedor.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Generales\frm_vendedor.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Generales\frm_vendedor.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_envio.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_envio.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_factura.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_factura.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_ingCompra.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_ingCompra.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\frm_rpt_pedido.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\frm_rpt_pedido.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\RPT_envio.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\RPT_envio.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\RPT_Factura.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\RPT_Factura.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\RPT_IngCompra.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\RPT_IngCompra.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Impresion\RPT_PedidoCli.rpt:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Impresion\RPT_PedidoCli.rpt</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Inventario\frm_cons_existencia.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Inventario\frm_cons_existencia.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\My Project\Resources.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\My Project\Resources.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Ventas.resx:
+        </strong><span>File successfully backed up as D:\PRG\VentasChung2008\Backup\Ventas\Ventas.resx</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Ventas.vbproj:
+        </strong><span>Project migrated successfully</span></td></tr><tr name="MessageRowClassVentas" style="display: none"><td class="IconInfoEncoded"><a name="VentasMessage" /></td><td class="messageCell"><strong>Ventas\Ventas.vbproj:
+        </strong><span>Scan complete: Migration not required for project files.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideVentas"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="VentasMessage" onclick="ToggleMessageVisibility('Ventas'); return false;">
+          Hide 229 additional messages
+        </a></td></tr></table></div></div></body></html>

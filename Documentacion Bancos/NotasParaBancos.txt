@@ -1,0 +1,16 @@
+
+Modulo de bancos
+
+Notas rapidas
+
+.Codigo de pais
+.taza de cambio
+.moneda $. y Q.
+.codigo de banco
+.cuenta bancaria Q. y $.
+.depositos
+.cheques
+.transferencias
+.transferencias moviles
+.transferencias a terceros
+.transferencias a otros bancos
